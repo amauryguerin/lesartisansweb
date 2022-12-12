@@ -18,7 +18,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @font-face {
 	font-family: MarcellusSC;
-	src: url(/app/public/wp-content/themes/artisante-qualidad/assets/fonts/marcellusSCregular.ttf);
+	src: url(/assets/fonts/marcellusSCregular.ttf);
 }
 
 html {
