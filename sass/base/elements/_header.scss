@@ -1,0 +1,76 @@
+.site-header {
+	position: sticky;
+	top: 0;
+	background-color: $color__deepblue;
+	color: $color__white;
+	font-size: 1.25rem;
+	padding: 1rem 0;
+	z-index: 999;
+	min-height: 80px;
+
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+
+		nav {
+			margin: 0;
+			font-family: $font__headings;
+
+			ul {
+
+				li {
+
+					span {
+
+						&:hover {
+							border-bottom: 1px solid $color__white;
+						}
+					}
+
+					&:last-child {
+
+						span {
+							border: 2px solid;
+							border-radius: 20px;
+							padding: 0.5rem;
+
+							&:hover {
+								background-color: $color__white;
+								color: $color__deepblue;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint_laptop) {
+
+	.site-header {
+
+		.header-container {
+			padding: 0 1rem;
+
+			.wp-block-navigation__responsive-container-open {
+				display: flex;
+			}
+
+			.wp-block-navigation__responsive-container.is-menu-open {
+				display: flex;
+				padding: 2rem 1rem;
+				color: $color__deepblue;
+			}
+
+			.wp-block-navigation__responsive-container {
+				display: none;
+			}
+		}
+	}
+}

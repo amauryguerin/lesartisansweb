@@ -1,0 +1,16 @@
+#services {
+	color: $color__white;
+
+	h3 {
+		color: $color__white;
+	}
+
+	.wp-block-columns {
+
+		.wp-block-column {
+			padding: 2rem;
+			background-color: $color__deepblue;
+			border-radius: 20px;
+		}
+	}
+}

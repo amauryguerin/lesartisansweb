@@ -1,0 +1,52 @@
+.entry-content > *,
+.entry-header > *,
+aside > * {
+	max-width: $aligndefault;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignwide {
+	max-width: $alignwide;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignfull {
+	max-width: $alignfull;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.aligndefault,
+.entry-content > * > * {
+	max-width: $aligndefault;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-site-blocks > * + * {
+	margin-block-start: 24px;
+
+	&:not(:first-child) {
+		margin-block-start: 0;
+
+	}
+}
+
+
+@media only screen and (max-width: $breakpoint_laptop) {
+
+	.wp-site-blocks {
+
+		.entry-content {
+			padding: 0 1rem;
+
+			.hero,
+			#banner {
+				margin: 0 -1rem;
+				max-width: calc(100% + 2rem);
+			}
+		}
+	}
+}

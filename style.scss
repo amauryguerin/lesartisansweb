@@ -1,0 +1,26 @@
+/*!
+Theme Name: ARTISANTE
+Theme URI: https://artisante.fr/
+Author: ARTISANTE
+Author URI: https://ARTISANTE.fr/
+Description: ARTISANTE theme
+Version: 1.0.2
+Tested up to: 5.4
+Requires PHP: 7.4
+Text Domain: ARTISANTE
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@import "sass/abstracts/abstracts";
+@import "sass/base/base";
+@import "sass/components/components";
+@import "sass/generic/normalize";
+@import "sass/generic/box-sizing";
+@import "sass/layouts/wrapper";
+@import "sass/patterns/patterns";
+@import "sass/utilities/accessibility";

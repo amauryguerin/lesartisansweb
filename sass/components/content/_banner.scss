@@ -1,0 +1,28 @@
+@keyframes bannerLoop {
+
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+#banner {
+
+	border-top: 1px solid $color__deepblue;
+	border-bottom: 1px solid $color__deepblue;
+	position: relative;
+	overflow: hidden;
+	height: 10rem;
+
+	p {
+		font-size: 6rem;
+		animation: bannerLoop 6s linear infinite;
+		position: absolute;
+		white-space: nowrap;
+		text-transform: uppercase;
+		max-width: unset;
+
+		&::before {
+			content: " ";
+		}
+	}
+}
