@@ -63,13 +63,6 @@ function ARTISANTE_styles() {
 		[],
 		ARTISANTE_VERSION
 	);
-
-	wp_enqueue_style(
-		'ARTISANTE-shared-styles',
-		get_theme_file_uri( 'assets/css/style-shared.css' ),
-		[],
-		ARTISANTE_VERSION
-	);
 }
 add_action( 'wp_enqueue_scripts', 'ARTISANTE_styles' );
 
