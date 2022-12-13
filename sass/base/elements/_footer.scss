@@ -9,22 +9,25 @@
 		margin-left: auto;
 		margin-right: auto;
 
-		a {
-			margin-bottom: 2rem;
-			color: $color__white;
-			text-decoration: none;
-			
-			&:hover {
-				border-bottom: 1px solid $color__white;
-			}
-			
-			&:visited {
-				color: $color__white;
-			}
-		}
+		.wp-block-column {
 
-		p {
-			margin-block-start: 0.5rem;
+			p {
+				margin-block-start: 0.5rem;
+
+				a {
+					margin-bottom: 2rem;
+					color: $color__white;
+					text-decoration: none;
+	
+					&:hover {
+						border-bottom: 1px solid $color__white;
+					}
+	
+					&:visited {
+						color: $color__white;
+					}
+				}
+			}
 		}
 	}
 }
