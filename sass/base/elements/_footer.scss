@@ -11,6 +11,11 @@
 
 		a {
 			margin-bottom: 2rem;
+			color: $color__white;
+
+			&:visited {
+				color: $color__white;
+			}
 		}
 
 		p {

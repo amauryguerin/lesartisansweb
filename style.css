@@ -136,6 +136,11 @@ textarea {
 
 .site-footer .wp-block-columns a {
 	margin-bottom: 2rem;
+	color: #fff;
+}
+
+.site-footer .wp-block-columns a:visited {
+	color: #fff;
 }
 
 .site-footer .wp-block-columns p {
@@ -397,9 +402,17 @@ h3 {
 	color: #fff;
 }
 
+#team .wp-block-button .wp-block-button__link:visited {
+	color: #fff;
+}
+
 #team .wp-block-button .wp-block-button__link:hover {
 	background-color: #fff;
 	border: 1px solid #192241;
+	color: #192241;
+}
+
+#team .wp-block-button .wp-block-button__link:hover:visited {
 	color: #192241;
 }/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
