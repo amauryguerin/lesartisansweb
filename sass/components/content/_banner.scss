@@ -12,6 +12,8 @@
 	position: relative;
 	overflow: hidden;
 	height: 10rem;
+	background-image: url(./assets/img/banner_texture.png);
+	font-family: $font__headings;
 
 	p {
 		font-size: 6rem;
