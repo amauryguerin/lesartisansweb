@@ -382,6 +382,24 @@ h3 {
 
 #team p:last-of-type {
 	margin: 0;
+}
+
+#team .wp-block-button {
+	margin-top: 2rem;
+}
+
+#team .wp-block-button .wp-block-button__link {
+	font-family: MarcellusSC;
+	background-color: #192241;
+	border-radius: 20px;
+	padding: 1rem 2rem;
+	border: 1px solid #192241;
+}
+
+#team .wp-block-button .wp-block-button__link:hover {
+	background-color: #fff;
+	border: 1px solid #192241;
+	color: #192241;
 }/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
 	line-height: 1.15;
