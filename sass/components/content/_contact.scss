@@ -1,0 +1,56 @@
+#nf-form-1-cont {
+
+	#nf-form-title-1 {
+
+		h3 {
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	.nf-form-wrap {
+
+		.nf-form-layout {
+
+			.nf-before-form-content {
+				font-size: 1rem;
+				margin-bottom: 2rem;
+			}
+
+			.nf-form-content {
+				padding: 0;
+
+				#nf-field-4-wrap {
+
+					.nf-field-element {
+						display: flex;
+						justify-content: center;
+
+						input {
+							font-family: $font__headings;
+							background-color: $color__deepblue;
+							border-radius: 20px;
+							padding: 1rem 2rem;
+							border: 1px solid $color__deepblue;
+							color: $color__white;
+
+							&:visited {
+								color: $color__white;
+							}
+
+							&:hover {
+								background-color: $color__white;
+								border: 1px solid $color__deepblue;
+								color: $color__deepblue;
+
+								&:visited {
+									color: $color__deepblue;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
