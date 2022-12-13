@@ -12,7 +12,12 @@
 		a {
 			margin-bottom: 2rem;
 			color: $color__white;
-
+			text-decoration: none;
+			
+			&:hover {
+				border-bottom: 1px solid $color__white;
+			}
+			
 			&:visited {
 				color: $color__white;
 			}
