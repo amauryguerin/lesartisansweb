@@ -291,7 +291,7 @@ p {
 	border: 1px transparent solid;
 }
 
-p.onAltPressed {
+.onAltPressed {
 	border: 1px #fcab00 solid;
 	text-decoration: underline #fcab00;
 	text-decoration-thickness: 1px;
