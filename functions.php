@@ -67,6 +67,18 @@ function ARTISANTE_styles() {
 add_action( 'wp_enqueue_scripts', 'ARTISANTE_styles' );
 
 /**
+ * Enqueue the script file.
+ *
+ * @return void
+ * @since 1.0.1
+ */
+function ARTISANTE_scripts() {
+	wp_enqueue_script(
+		'ARTISANTE-script', get_template_directory_uri() . '/js/script.js', array(), ARTISANTE_VERSION, true );
+}
+add_action( 'wp_enqueue_scripts', 'ARTISANTE_scripts' );
+
+/**
  * Show '(No title)' if post has no title.
  */
 add_filter(

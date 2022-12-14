@@ -31,10 +31,6 @@ body {
 	overflow-x: hidden;
 }
 
-body p {
-	font-size: 1rem;
-}
-
 body #about_us,
 body #expertise,
 body #services {
@@ -288,6 +284,16 @@ img {
 
 figure {
 	margin: 1em 0;
+}
+
+p {
+	font-size: 1rem;
+	border: 1px transparent solid;
+}
+
+p.onAltPressed:hover {
+	border: 1px #fcab00 solid;
+	text-decoration: underline #fcab00;
 }
 
 table {
