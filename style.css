@@ -291,7 +291,7 @@ p {
 	border: 1px transparent solid;
 }
 
-p.onAltPressed:hover {
+p.onAltPressed {
 	border: 1px #fcab00 solid;
 	text-decoration: underline #fcab00;
 }
