@@ -14,7 +14,6 @@ document.addEventListener('keyup', keyUp);
 function keyUp(event) {   
     //alt key up
     if(event.keyCode === 18) {
-        console.log("ok");
         docP.forEach((e) => {
             e.classList.remove("onAltPressed");
         });

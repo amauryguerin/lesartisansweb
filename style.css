@@ -395,6 +395,18 @@ h3 {
 	color: #192241;
 }
 
+#gallery figure {
+	position: relative;
+}
+
+#gallery figure figcaption {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40%;
+	text-align: left;
+}
+
 .hero {
 	position: relative;
 }

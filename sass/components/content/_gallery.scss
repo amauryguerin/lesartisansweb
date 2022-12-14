@@ -1,0 +1,14 @@
+#gallery {
+
+	figure {
+		position: relative;
+
+		figcaption {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40%;
+			text-align: left;
+		}
+	}
+}
