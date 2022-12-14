@@ -291,6 +291,10 @@ p {
 	border: 1px transparent solid;
 }
 
+figcaption {
+	border: 1px transparent solid;
+}
+
 .onAltPressed {
 	border: 1px #fcab00 solid;
 	text-decoration: underline #fcab00;
