@@ -389,15 +389,8 @@ h3 {
 	color: #192241;
 }
 
-.hero ::after {
-	content: "Les artisans ont besoin d’artisans pour travailler ";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 5rem;
-	font-family: MarcellusSC;
-	color: #fcab00;
+.hero {
+	position: relative;
 }
 
 .hero figure {
@@ -409,6 +402,47 @@ h3 {
 	filter: brightness(0.6);
 	object-fit: cover;
 	width: 100%;
+}
+
+.hero .hero__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hero .hero__content p:first-child {
+	font-size: 5rem;
+	font-family: MarcellusSC;
+	color: #fcab00;
+}
+
+.hero .hero__content .wp-block-button {
+	margin-top: 2rem;
+}
+
+.hero .hero__content .wp-block-button .wp-block-button__link {
+	font-family: MarcellusSC;
+	font-size: 1.5rem;
+	background-color: #192241;
+	border-radius: 20px;
+	padding: 1rem 2rem;
+	border: 1px solid #192241;
+	color: #fff;
+}
+
+.hero .hero__content .wp-block-button .wp-block-button__link:visited {
+	color: #fff;
+}
+
+.hero .hero__content .wp-block-button .wp-block-button__link:hover {
+	background-color: #fff;
+	border: 1px solid #192241;
+	color: #192241;
+}
+
+.hero .hero__content .wp-block-button .wp-block-button__link:hover:visited {
+	color: #192241;
 }
 
 #services {
