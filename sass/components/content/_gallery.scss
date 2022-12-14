@@ -11,6 +11,11 @@
 			text-align: left;
 			font-size: 1rem;
 			color: $color__deepblue;
+
+			@media only screen and (max-width: $breakpoint_laptop) {
+				position: unset;
+				width: unset;
+			}
 		}
 	}
 }
