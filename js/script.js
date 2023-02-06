@@ -38,7 +38,7 @@ let testContent = document.querySelector(".test__content");
 let yesCount = 1;
 
 btnTestYes.addEventListener("click", function() {
-    testContent.innerHTML = "Nous sommes désolés mais nous ne sommes pas sur la même longueur d'onde !";
+    testContent.innerHTML = "Désolé mais nous ne sommes pas sur la même longueur d'onde !";
     btnTestYes.style.display ="none";
     btnTestNo.style.display ="none";
 });

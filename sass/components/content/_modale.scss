@@ -1,0 +1,41 @@
+#modale--alt {
+	position: fixed;
+	left: 50%;
+	bottom: 2vh;
+	transform: translate(-50%);
+	z-index: 1;
+	color: $color__black;
+	background-color: $color__grey;
+	box-shadow: 0 0 10px 1px $color__black;
+	padding: 1.5rem 2rem;
+	border-radius: 20px;
+
+	@media only screen and (max-width: $breakpoint_mobile) {
+		display: none;
+		visibility: hidden;
+	}
+
+	p {
+		position: relative;
+		max-width: 100%;
+		padding-left: 2rem;
+		white-space: nowrap;
+
+		@media only screen and (max-width: 1160px) {
+			white-space: pre-wrap;
+		}
+
+		&::before {
+			content: "";
+			background-image: url(./assets/img/icon-tips.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(-50%, -50%);
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
