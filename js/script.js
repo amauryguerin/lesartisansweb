@@ -33,4 +33,27 @@ function keyUp(event) {
 
 const btnTestYes = document.querySelector(".test__btn--yes");
 const btnTestNo = document.querySelector(".test__btn--no");
-let testContent = document.querySelector(".test__content").innerHTML;
+const btnTestContact = document.querySelector(".test__btn--contact");
+let testContent = document.querySelector(".test__content");
+let yesCount = 1;
+
+btnTestYes.addEventListener("click", function() {
+    testContent.innerHTML = "Nous sommes désolés mais nous ne sommes pas sur la même longueur d'onde !";
+    btnTestYes.style.display ="none";
+    btnTestNo.style.display ="none";
+});
+
+btnTestNo.addEventListener("click", function() {
+    testContent.innerHTML = "Souhaitez-vous un site qui ne retransmet pas vos valeurs ?";
+
+    if (yesCount === 2) {
+        testContent.innerHTML = "Souhaitez-vous travailler avec des personnes qui ne s’intéressent pas à votre métier ?";
+    }
+    if (yesCount === 3) {
+        testContent.innerHTML = "Nous sommes donc fait pour collaborer ensemble !";
+        btnTestYes.style.display ="none";
+        btnTestNo.style.display ="none";
+        btnTestContact.style.display ="block";
+    }
+    yesCount++;
+});

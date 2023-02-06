@@ -18,6 +18,10 @@
 
 		.wp-block-button {
 
+			&.test__btn--contact {
+				display: none;
+			}
+
 			.wp-block-button__link {
 				font-family: $font__headings;
 				font-size: 1.25rem;
@@ -33,6 +37,7 @@
 					background-color: $color__white;
 					border: 2px solid $color__deepblue;
 				}
+
 			}
 		}
 	}
