@@ -1,3 +1,5 @@
+//alt fonction
+
 const docP = document.querySelectorAll( "p" );
 const docFigcaption = document.querySelectorAll( "figcaption" );
 
@@ -26,3 +28,11 @@ function keyUp(event) {
         });
     }
 }
+
+//test section
+
+const btnTestYes = document.querySelector(".test__btn--yes");
+const btnTestNo = document.querySelector(".test__btn--no");
+let testContent = document.querySelector(".test__content");
+
+console.log(btnTestYes, btnTestNo, testContent);
