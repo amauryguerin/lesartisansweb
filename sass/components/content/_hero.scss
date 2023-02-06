@@ -20,14 +20,9 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 
-		p:first-child {
-			font-size: 5rem;
+		h1 {
 			font-family: $font__headings;
 			color: $color__orange;
-
-			@media only screen and (max-width: $breakpoint_laptop) {
-				font-size: 1rem;
-			}
 		}
 
 		.wp-block-button {
