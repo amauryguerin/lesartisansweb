@@ -561,7 +561,39 @@ h3 {
 }
 
 #test {
-	background-color: red;
+	background-color: #192241;
+	color: #fff;
+	padding: 2rem 0;
+}
+
+#test h2 {
+	color: #fff;
+}
+
+#test p {
+	font-family: MarcellusSC;
+	font-size: 1.5rem;
+}
+
+#test .wp-block-buttons {
+	gap: 6rem;
+}
+
+#test .wp-block-buttons .wp-block-button .wp-block-button__link {
+	font-family: MarcellusSC;
+	font-size: 1.25rem;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: unset;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+}
+
+#test .wp-block-buttons .wp-block-button .wp-block-button__link:hover {
+	color: #192241;
+	background-color: #fff;
+	border: 2px solid #192241;
 }/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
 	line-height: 1.15;

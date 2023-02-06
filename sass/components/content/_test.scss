@@ -1,3 +1,39 @@
 #test {
-	background-color: red;
+	background-color: $color__deepblue;
+	color: $color__white;
+	padding: 2rem 0;
+
+	h2 {
+		color: $color__white;
+	}
+
+	p {
+		font-family: $font__headings;
+		font-size: 1.5rem;
+	}
+
+	.wp-block-buttons {
+
+		gap: 6rem;
+
+		.wp-block-button {
+
+			.wp-block-button__link {
+				font-family: $font__headings;
+				font-size: 1.25rem;
+				color: $color__white;
+				text-transform: uppercase;
+				background-color: unset;
+				border: 2px solid $color__white;
+				border-radius: 20px;
+				padding: 0.5rem 1rem;
+
+				&:hover {
+					color: $color__deepblue;
+					background-color: $color__white;
+					border: 2px solid $color__deepblue;
+				}
+			}
+		}
+	}
 }

@@ -33,6 +33,4 @@ function keyUp(event) {
 
 const btnTestYes = document.querySelector(".test__btn--yes");
 const btnTestNo = document.querySelector(".test__btn--no");
-let testContent = document.querySelector(".test__content");
-
-console.log(btnTestYes, btnTestNo, testContent);
+let testContent = document.querySelector(".test__content").innerHTML;
