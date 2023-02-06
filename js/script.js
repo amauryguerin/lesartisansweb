@@ -57,3 +57,9 @@ btnTestNo.addEventListener("click", function() {
     }
     yesCount++;
 });
+
+//close modale
+const altModale = document.getElementById("modale--alt");
+altModale.addEventListener("click", function() {
+    altModale.style.display = "none";
+});
