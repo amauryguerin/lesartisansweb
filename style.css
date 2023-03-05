@@ -476,6 +476,7 @@ h3 {
 
 #gallery figure {
 	position: relative;
+	padding-top: 1rem;
 }
 
 #gallery figure figcaption {
@@ -484,6 +485,7 @@ h3 {
 	right: 0;
 	width: 40%;
 	text-align: left;
+	margin: 0;
 	font-family: effra, sans-serif;
 	font-size: 1.25rem;
 	font-weight: 400;
