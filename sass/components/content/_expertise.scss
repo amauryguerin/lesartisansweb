@@ -1,0 +1,21 @@
+#expertise {
+	background-image: url(./assets/img/banner_texture.png);
+	padding: 4rem 0;
+
+	h2 {
+
+		&::before {
+			left: 50%;
+			transform: translate(-50%);
+		}
+	}
+
+	.wp-block-columns {
+
+		.wp-block-column {
+			background-color: $color__white;
+			border-radius: 1.5rem;
+			padding: 2.5rem 2rem;
+		}
+	}
+}

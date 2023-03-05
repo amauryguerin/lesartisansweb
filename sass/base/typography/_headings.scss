@@ -24,10 +24,21 @@ h1 {
 h2 {
 	font-size: 3rem;
 	font-weight: 700;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		width: 4rem;
+		height: 0.25rem;
+		background-color: $color__orange;
+	}
 
 	@media only screen and (max-width: $breakpoint_laptop) {
 		font-size: 2rem;
 	}
+
 }
 
 h3 {

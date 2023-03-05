@@ -9,4 +9,8 @@ body {
 	#test {
 		scroll-margin-top: 90px;
 	}
+
+	.is-layout-constrained > * + * {
+		margin-block-start: 4rem;
+	}
 }

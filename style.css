@@ -35,6 +35,10 @@ body #test {
 	scroll-margin-top: 90px;
 }
 
+body .is-layout-constrained > * + * {
+	margin-block-start: 4rem;
+}
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -345,6 +349,16 @@ h1 {
 h2 {
 	font-size: 3rem;
 	font-weight: 700;
+	position: relative;
+}
+
+h2::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 4rem;
+	height: 0.25rem;
+	background-color: #fcab00;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -364,6 +378,10 @@ h3 {
 	h3 {
 		font-size: 1rem;
 	}
+}
+
+#about_us img {
+	border-radius: 1.5rem;
 }
 
 @keyframes bannerLoop {
@@ -436,6 +454,22 @@ h3 {
 
 #nf-form-1-cont .nf-form-wrap .nf-form-layout .nf-form-content #nf-field-4-wrap .nf-field-element input:hover:visited {
 	color: #192241;
+}
+
+#expertise {
+	background-image: url(./assets/img/banner_texture.png);
+	padding: 4rem 0;
+}
+
+#expertise h2::before {
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#expertise .wp-block-columns .wp-block-column {
+	background-color: #fff;
+	border-radius: 1.5rem;
+	padding: 2.5rem 2rem;
 }
 
 #gallery figure {
