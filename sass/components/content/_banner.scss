@@ -6,19 +6,19 @@
 }
 
 #banner {
-
-	border-top: 1px solid $color__deepblue;
-	border-bottom: 1px solid $color__deepblue;
 	position: relative;
 	overflow: hidden;
 	height: 10rem;
-	background-image: url(./assets/img/banner_texture.png);
 	font-family: $font__headings;
+	background-color: $color__deepblue;
+	color: $color__white;
 
 	p {
-		font-size: 6rem;
+		font-size: 4rem;
 		animation: bannerLoop 20s linear infinite;
 		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 		white-space: nowrap;
 		text-transform: uppercase;
 		max-width: unset;
