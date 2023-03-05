@@ -9,7 +9,9 @@
 			right: 0;
 			width: 40%;
 			text-align: left;
-			font-size: 1rem;
+			font-family: $font__main;
+			font-size: 1.25rem;
+			font-weight: 400;
 			color: $color__deepblue;
 
 			@media only screen and (max-width: $breakpoint_laptop) {
