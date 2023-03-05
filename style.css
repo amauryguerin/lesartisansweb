@@ -532,11 +532,11 @@ h3 {
 	position: relative;
 }
 
-.hero figure {
+.hero figure:first-child {
 	max-width: 100%;
 }
 
-.hero figure img {
+.hero figure:first-child img {
 	height: calc(100vh - 80px);
 	filter: brightness(0.6);
 	object-fit: cover;
@@ -584,33 +584,21 @@ h3 {
 	color: #fcab00;
 }
 
-.hero .hero__contact {
-	display: block;
+.hero .hero__btn__contact {
 	position: absolute;
-	right: 6vw;
+	right: 8vw;
 	bottom: 6vh;
-	border-radius: 1.5rem;
-	overflow: hidden;
-}
-
-.hero .hero__contact > .wp-block-button {
-	margin-top: 0;
-}
-
-.hero .hero__contact > .wp-block-button > .wp-block-button__link {
-	background-color: #fcab00;
-	color: #fff;
+	width: 80px;
+	height: 80px;
 	padding: 1rem;
+	margin: 0;
+	background-color: #fcab00;
+	border-radius: 1.5rem;
+	cursor: pointer;
 }
 
-.hero .hero__contact > .wp-block-button > .wp-block-button__link:hover {
-	background-color: #fff;
-	border: 2px solid transparent;
-	color: #fcab00;
-}
-
-.hero .hero__contact > .wp-block-button > .wp-block-button__link:hover:visited {
-	color: #fcab00;
+.hero .hero__btn__contact img {
+	filter: invert(1);
 }
 
 #modale--alt {

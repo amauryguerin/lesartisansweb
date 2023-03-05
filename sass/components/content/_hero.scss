@@ -1,7 +1,7 @@
 .hero {
 	position: relative;
 
-	figure {
+	figure:first-child {
 		max-width: 100%;
 
 		img {
@@ -54,32 +54,20 @@
 		}
 	}
 
-	.hero__contact {
-		display: block;
+	.hero__btn__contact {
 		position: absolute;
-		right: 6vw;
+		right: 8vw;
 		bottom: 6vh;
+		width: 80px;
+		height: 80px;
+		padding: 1rem;
+		margin: 0;
+		background-color: $color__orange;
 		border-radius: 1.5rem;
-		overflow: hidden;
+		cursor: pointer;
 
-		> .wp-block-button {
-			margin-top: 0;
-
-			> .wp-block-button__link {
-				background-color: $color__orange;
-				color: $color__white;
-				padding: 1rem;
-
-				&:hover {
-					background-color: $color__white;
-					border: 2px solid transparent;
-					color: $color__orange;
-
-					&:visited {
-						color: $color__orange;
-					}
-				}
-			}
+		img {
+			filter: invert(1);
 		}
 	}
 }
