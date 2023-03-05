@@ -18,4 +18,32 @@
 			}
 		}
 	}
+
+	.wp-block-button {
+		margin-top: 2rem;
+
+		.wp-block-button__link {
+			font-family: $font__headings;
+			text-transform: uppercase;
+			background-color: transparent;
+			border-radius: 20px;
+			padding: 1rem 2rem;
+			border: 1px solid $color__orange;
+			color: $color__deepblue;
+
+			&:visited {
+				color: $color__white;
+			}
+
+			&:hover {
+				background-color: $color__orange;
+				border: 1px solid transparent;
+				color: $color__white;
+
+				&:visited {
+					color: $color__white;
+				}
+			}
+		}
+	}
 }
