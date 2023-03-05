@@ -60,8 +60,16 @@ btnTestNo.addEventListener("click", function() {
 //test affichage
 const test = document.querySelector("#test");
 const btnTestShow = document.querySelector(".hero__btn--test");
+let isShown = false;
     btnTestShow.addEventListener("click", function() {
         test.style.display = "block"
+        isShown = true;
+        if (isShown) {
+            test.addEventListener("click", function() {
+                test.style.display = "none"
+                isShown = false;
+            })
+        }
 })
 
 //close modale

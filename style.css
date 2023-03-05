@@ -715,6 +715,19 @@ h3 {
 	display: none;
 }
 
+#test::after {
+	content: "";
+	position: absolute;
+	right: 2.5rem;
+	top: 2.5rem;
+	width: 2rem;
+	height: 2rem;
+	background-image: url(https://cdn-icons-png.flaticon.com/512/57/57165.png);
+	background-size: contain;
+	filter: invert(1);
+	cursor: pointer;
+}
+
 #test h2 {
 	color: #fff;
 }
