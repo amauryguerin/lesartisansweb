@@ -2,7 +2,7 @@ p {
 	font-family: $font__main;
 	font-size: 1.25rem;
 	font-weight: 400;
-	border: 1px transparent solid;
+	border: 2px transparent solid;
 
 	@media only screen and (max-width: $breakpoint_mobile) {
 		font-size: 1rem !important;
@@ -10,11 +10,11 @@ p {
 }
 
 figcaption {
-	border: 1px transparent solid;
+	border: 2px transparent solid;
 }
 
 .onAltPressed {
-	border: 1px $color__orange solid;
+	border: 2px $color__orange solid;
 	text-decoration: underline $color__orange;
 	text-decoration-thickness: 1px;
 }

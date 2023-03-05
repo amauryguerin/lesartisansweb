@@ -31,7 +31,7 @@
 							background-color: $color__deepblue;
 							border-radius: 20px;
 							padding: 1rem 2rem;
-							border: 1px solid $color__deepblue;
+							border: 2px solid $color__deepblue;
 							color: $color__white;
 
 							&:visited {
@@ -40,7 +40,7 @@
 
 							&:hover {
 								background-color: $color__white;
-								border: 1px solid $color__deepblue;
+								border: 2px solid $color__deepblue;
 								color: $color__deepblue;
 
 								&:visited {

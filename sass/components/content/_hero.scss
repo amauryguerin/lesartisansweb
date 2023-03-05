@@ -32,7 +32,7 @@
 				font-size: 1.5rem;
 				text-transform: uppercase;
 				border-radius: 1.5rem;
-				border: 1px solid $color__orange;
+				border: 2px solid $color__orange;
 				padding: 1rem 2rem;
 				color: $color__white;
 				background-color: unset;
@@ -43,7 +43,7 @@
 
 				&:hover {
 					background-color: $color__white;
-					border: 1px solid transparent;
+					border: 2px solid transparent;
 					color: $color__orange;
 
 					&:visited {
@@ -72,7 +72,7 @@
 
 				&:hover {
 					background-color: $color__white;
-					border: 1px solid transparent;
+					border: 2px solid transparent;
 					color: $color__orange;
 
 					&:visited {

@@ -43,7 +43,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
+	border: 2px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
 	background: #e6e6e6;
@@ -292,7 +292,7 @@ p {
 	font-family: effra, sans-serif;
 	font-size: 1.25rem;
 	font-weight: 400;
-	border: 1px transparent solid;
+	border: 2px transparent solid;
 }
 
 @media only screen and (max-width: 780px) {
@@ -303,11 +303,11 @@ p {
 }
 
 figcaption {
-	border: 1px transparent solid;
+	border: 2px transparent solid;
 }
 
 .onAltPressed {
-	border: 1px #fcab00 solid;
+	border: 2px #fcab00 solid;
 	text-decoration: underline #fcab00;
 	text-decoration-thickness: 1px;
 }
@@ -440,7 +440,7 @@ h3 {
 	background-color: #192241;
 	border-radius: 20px;
 	padding: 1rem 2rem;
-	border: 1px solid #192241;
+	border: 2px solid #192241;
 	color: #fff;
 }
 
@@ -450,7 +450,7 @@ h3 {
 
 #nf-form-1-cont .nf-form-wrap .nf-form-layout .nf-form-content #nf-field-4-wrap .nf-field-element input:hover {
 	background-color: #fff;
-	border: 1px solid #192241;
+	border: 2px solid #192241;
 	color: #192241;
 }
 
@@ -510,7 +510,7 @@ h3 {
 	background-color: transparent;
 	border-radius: 20px;
 	padding: 1rem 2rem;
-	border: 1px solid #fcab00;
+	border: 2px solid #fcab00;
 	color: #192241;
 }
 
@@ -520,7 +520,7 @@ h3 {
 
 #gallery .wp-block-button .wp-block-button__link:hover {
 	background-color: #fcab00;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	color: #fff;
 }
 
@@ -564,7 +564,7 @@ h3 {
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	border-radius: 1.5rem;
-	border: 1px solid #fcab00;
+	border: 2px solid #fcab00;
 	padding: 1rem 2rem;
 	color: #fff;
 	background-color: unset;
@@ -576,7 +576,7 @@ h3 {
 
 .hero .hero__content .wp-block-button .wp-block-button__link:hover {
 	background-color: #fff;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	color: #fcab00;
 }
 
@@ -605,7 +605,7 @@ h3 {
 
 .hero .hero__contact > .wp-block-button > .wp-block-button__link:hover {
 	background-color: #fff;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	color: #fcab00;
 }
 
@@ -704,33 +704,15 @@ h3 {
 #test {
 	background-color: #192241;
 	color: #fff;
-	padding: 2rem 0;
-	position: relative;
-}
-
-@media only screen and (max-width: 1000px) {
-
-	#test ::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 0;
-		transform: translate(-100%);
-		width: 1rem;
-		height: 100%;
-		background-color: #192241;
-	}
-
-	#test ::after {
-		content: "";
-		position: absolute;
-		right: 0;
-		top: 0;
-		transform: translate(100%);
-		width: 1rem;
-		height: 100%;
-		background-color: #192241;
-	}
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 1200px;
+	padding: 4rem 0;
+	border-radius: 1.5rem;
+	display: none;
 }
 
 #test h2 {
