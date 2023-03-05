@@ -1,16 +1,25 @@
 #services {
-	color: $color__white;
+	margin-block-start: 0;
+	padding: 4rem 0;
+	color: $color__deepblue;
+	background-color: $color__orange;
 
-	h3 {
-		color: $color__white;
+	h2 {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			width: 4rem;
+			height: 0.25rem;
+			background-color: $color__white;
+		}
 	}
 
-	.wp-block-columns {
-
-		.wp-block-column {
-			padding: 2rem;
-			background-color: $color__deepblue;
-			border-radius: 20px;
-		}
+	h3 {
+		color: $color__deepblue;
+		text-transform: uppercase;
 	}
 }

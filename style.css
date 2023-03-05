@@ -392,6 +392,7 @@ h3 {
 }
 
 #banner {
+	margin-block-start: 0;
 	position: relative;
 	overflow: hidden;
 	height: 10rem;
@@ -629,17 +630,29 @@ h3 {
 }
 
 #services {
-	color: #fff;
+	margin-block-start: 0;
+	padding: 4rem 0;
+	color: #192241;
+	background-color: #fcab00;
+}
+
+#services h2 {
+	position: relative;
+}
+
+#services h2::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 4rem;
+	height: 0.25rem;
+	background-color: #fff;
 }
 
 #services h3 {
-	color: #fff;
-}
-
-#services .wp-block-columns .wp-block-column {
-	padding: 2rem;
-	background-color: #192241;
-	border-radius: 20px;
+	color: #192241;
+	text-transform: uppercase;
 }
 
 #team img {
