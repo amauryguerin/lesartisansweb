@@ -688,6 +688,14 @@ h3 {
 	text-transform: uppercase;
 }
 
+#services figure img {
+	max-width: 160px;
+	width: 100%;
+	max-height: 160px;
+	height: 100%;
+	object-fit: contain;
+}
+
 #team img {
 	border-radius: 20px;
 }
