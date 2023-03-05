@@ -3,6 +3,7 @@
 	color: $color__white;
 	padding: 2rem 0;
 	position: relative;
+	display: none;
 
 	@media only screen and (max-width: $breakpoint_laptop) {
 
