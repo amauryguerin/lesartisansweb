@@ -35,13 +35,13 @@
 					&:last-child {
 
 						span {
-							border: 2px solid;
+							border: 2px solid $color__orange;
 							border-radius: 20px;
 							padding: 0.5rem;
 
 							&:hover {
-								background-color: $color__white;
-								color: $color__deepblue;
+								background-color: $color__orange;
+								color: $color__white;
 							}
 						}
 					}

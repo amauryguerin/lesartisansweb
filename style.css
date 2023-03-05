@@ -192,14 +192,14 @@ textarea {
 }
 
 .site-header .header-container nav ul li:last-child span {
-	border: 2px solid;
+	border: 2px solid #fcab00;
 	border-radius: 20px;
 	padding: 0.5rem;
 }
 
 .site-header .header-container nav ul li:last-child span:hover {
-	background-color: #fff;
-	color: #192241;
+	background-color: #fcab00;
+	color: #fff;
 }
 
 @media only screen and (max-width: 1000px) {
