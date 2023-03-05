@@ -60,12 +60,13 @@ btnTestNo.addEventListener("click", function() {
 //test affichage
 const test = document.querySelector("#test");
 const btnTestShow = document.querySelector(".hero__btn--test");
+const btnTestClose = document.querySelector(".test__btn__close");
 let isShown = false;
     btnTestShow.addEventListener("click", function() {
         test.style.display = "block"
         isShown = true;
         if (isShown) {
-            test.addEventListener("click", function() {
+            btnTestClose.addEventListener("click", function() {
                 test.style.display = "none"
                 isShown = false;
             })
