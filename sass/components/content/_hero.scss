@@ -1,5 +1,4 @@
 .hero {
-
 	position: relative;
 
 	figure {
@@ -22,7 +21,7 @@
 
 		h1 {
 			font-family: $font__headings;
-			color: $color__orange;
+			color: $color__white;
 		}
 
 		.wp-block-button {
@@ -31,11 +30,12 @@
 			.wp-block-button__link {
 				font-family: $font__headings;
 				font-size: 1.5rem;
-				background-color: $color__deepblue;
-				border-radius: 20px;
+				text-transform: uppercase;
+				border-radius: 1.5rem;
+				border: 1px solid $color__orange;
 				padding: 1rem 2rem;
-				border: 1px solid $color__deepblue;
 				color: $color__white;
+				background-color: unset;
 
 				&:visited {
 					color: $color__white;
@@ -43,11 +43,40 @@
 
 				&:hover {
 					background-color: $color__white;
-					border: 1px solid $color__deepblue;
-					color: $color__deepblue;
+					border: 1px solid transparent;
+					color: $color__orange;
 
 					&:visited {
-						color: $color__deepblue;
+						color: $color__orange;
+					}
+				}
+			}
+		}
+	}
+
+	.hero__contact {
+		display: block;
+		position: absolute;
+		right: 6vw;
+		bottom: 6vh;
+		border-radius: 1.5rem;
+		overflow: hidden;
+
+		> .wp-block-button {
+			margin-top: 0;
+
+			> .wp-block-button__link {
+				background-color: $color__orange;
+				color: $color__white;
+				padding: 1rem;
+
+				&:hover {
+					background-color: $color__white;
+					border: 1px solid transparent;
+					color: $color__orange;
+
+					&:visited {
+						color: $color__orange;
 					}
 				}
 			}

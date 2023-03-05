@@ -16,10 +16,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-@font-face {
-	font-family: MarcellusSC;
-	src: url(./assets/fonts/marcellusSCregular.ttf);
-}
+@import url("https://use.typekit.net/yxj6gkb.css");
 
 html {
 	scroll-behavior: smooth;
@@ -183,7 +180,7 @@ textarea {
 
 .site-header .header-container nav {
 	margin: 0;
-	font-family: MarcellusSC;
+	font-family: effra, sans-serif;
 }
 
 .site-header .header-container nav ul li span:hover {
@@ -288,8 +285,17 @@ figure {
 }
 
 p {
-	font-size: 1rem;
+	font-family: effra, sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
 	border: 1px transparent solid;
+}
+
+@media only screen and (max-width: 780px) {
+
+	p {
+		font-size: 1rem !important;
+	}
 }
 
 figcaption {
@@ -314,29 +320,31 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: MarcellusSC;
+	font-family: effra, sans-serif;
 }
 
 h1 {
-	font-size: 5rem !important;
+	font-size: 4rem !important;
+	font-weight: 700;
 }
 
 @media only screen and (max-width: 1000px) {
-
-	h1 {
-		font-size: 4rem !important;
-	}
-}
-
-@media only screen and (max-width: 780px) {
 
 	h1 {
 		font-size: 3rem !important;
 	}
 }
 
+@media only screen and (max-width: 780px) {
+
+	h1 {
+		font-size: 2rem !important;
+	}
+}
+
 h2 {
-	font-size: 2.5rem;
+	font-size: 3rem;
+	font-weight: 700;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -347,7 +355,8 @@ h2 {
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 2rem;
+	font-weight: 700;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -371,7 +380,7 @@ h3 {
 	overflow: hidden;
 	height: 10rem;
 	background-image: url(./assets/img/banner_texture.png);
-	font-family: MarcellusSC;
+	font-family: effra, sans-serif;
 }
 
 #banner p {
@@ -407,7 +416,7 @@ h3 {
 }
 
 #nf-form-1-cont .nf-form-wrap .nf-form-layout .nf-form-content #nf-field-4-wrap .nf-field-element input {
-	font-family: MarcellusSC;
+	font-family: effra, sans-serif;
 	background-color: #192241;
 	border-radius: 20px;
 	padding: 1rem 2rem;
@@ -474,8 +483,8 @@ h3 {
 }
 
 .hero .hero__content h1 {
-	font-family: MarcellusSC;
-	color: #fcab00;
+	font-family: effra, sans-serif;
+	color: #fff;
 }
 
 .hero .hero__content .wp-block-button {
@@ -483,13 +492,14 @@ h3 {
 }
 
 .hero .hero__content .wp-block-button .wp-block-button__link {
-	font-family: MarcellusSC;
+	font-family: effra, sans-serif;
 	font-size: 1.5rem;
-	background-color: #192241;
-	border-radius: 20px;
+	text-transform: uppercase;
+	border-radius: 1.5rem;
+	border: 1px solid #fcab00;
 	padding: 1rem 2rem;
-	border: 1px solid #192241;
 	color: #fff;
+	background-color: unset;
 }
 
 .hero .hero__content .wp-block-button .wp-block-button__link:visited {
@@ -498,12 +508,41 @@ h3 {
 
 .hero .hero__content .wp-block-button .wp-block-button__link:hover {
 	background-color: #fff;
-	border: 1px solid #192241;
-	color: #192241;
+	border: 1px solid transparent;
+	color: #fcab00;
 }
 
 .hero .hero__content .wp-block-button .wp-block-button__link:hover:visited {
-	color: #192241;
+	color: #fcab00;
+}
+
+.hero .hero__contact {
+	display: block;
+	position: absolute;
+	right: 6vw;
+	bottom: 6vh;
+	border-radius: 1.5rem;
+	overflow: hidden;
+}
+
+.hero .hero__contact > .wp-block-button {
+	margin-top: 0;
+}
+
+.hero .hero__contact > .wp-block-button > .wp-block-button__link {
+	background-color: #fcab00;
+	color: #fff;
+	padding: 1rem;
+}
+
+.hero .hero__contact > .wp-block-button > .wp-block-button__link:hover {
+	background-color: #fff;
+	border: 1px solid transparent;
+	color: #fcab00;
+}
+
+.hero .hero__contact > .wp-block-button > .wp-block-button__link:hover:visited {
+	color: #fcab00;
 }
 
 #modale--alt {
@@ -574,7 +613,7 @@ h3 {
 
 #team p:first-of-type {
 	font-size: 1.5rem;
-	font-family: MarcellusSC;
+	font-family: effra, sans-serif;
 }
 
 #team p:last-of-type {
@@ -586,7 +625,7 @@ h3 {
 }
 
 #team .wp-block-button .wp-block-button__link {
-	font-family: MarcellusSC;
+	font-family: effra, sans-serif;
 	background-color: #192241;
 	border-radius: 20px;
 	padding: 1rem 2rem;
@@ -645,7 +684,7 @@ h3 {
 }
 
 #test p {
-	font-family: MarcellusSC;
+	font-family: effra, sans-serif;
 	font-size: 1.5rem;
 }
 
@@ -658,7 +697,7 @@ h3 {
 }
 
 #test .wp-block-buttons .wp-block-button .wp-block-button__link {
-	font-family: MarcellusSC;
+	font-family: effra, sans-serif;
 	font-size: 1.25rem;
 	color: #fff;
 	text-transform: uppercase;
