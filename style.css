@@ -387,7 +387,7 @@ h3 {
 @keyframes bannerLoop {
 
 	to {
-		transform: translateX(-50%);
+		transform: translate(-50%, -50%);
 	}
 }
 
