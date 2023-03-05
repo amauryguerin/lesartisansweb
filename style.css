@@ -1016,9 +1016,16 @@ aside > * {
 	}
 
 	.wp-site-blocks .entry-content .hero,
-	.wp-site-blocks .entry-content #banner {
+	.wp-site-blocks .entry-content #banner,
+	.wp-site-blocks .entry-content #expertise,
+	.wp-site-blocks .entry-content #services {
 		margin: 0 -1rem;
+		padding: 0 1rem;
 		max-width: calc(100% + 2rem);
+	}
+
+	.wp-site-blocks .entry-content .hero {
+		padding: 0;
 	}
 }
 

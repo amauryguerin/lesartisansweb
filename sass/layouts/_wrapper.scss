@@ -43,9 +43,16 @@ aside > * {
 			padding: 0 1rem;
 
 			.hero,
-			#banner {
+			#banner,
+			#expertise,
+			#services {
 				margin: 0 -1rem;
+				padding: 0 1rem;
 				max-width: calc(100% + 2rem);
+			}
+
+			.hero {
+				padding: 0;
 			}
 		}
 	}
