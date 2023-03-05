@@ -30,7 +30,6 @@ function keyUp(event) {
 }
 
 //test section
-
 const btnTestYes = document.querySelector(".test__btn--yes");
 const btnTestNo = document.querySelector(".test__btn--no");
 const btnTestContact = document.querySelector(".test__btn--contact");
@@ -57,6 +56,13 @@ btnTestNo.addEventListener("click", function() {
     }
     yesCount++;
 });
+
+//test affichage
+const test = document.querySelector("#test");
+const btnTestShow = document.querySelector(".hero__btn--test");
+    btnTestShow.addEventListener("click", function() {
+        test.style.display = "block"
+})
 
 //close modale
 const altModale = document.getElementById("modale--alt");

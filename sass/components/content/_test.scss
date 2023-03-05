@@ -3,8 +3,9 @@
 	color: $color__white;
 	padding: 2rem 0;
 	position: relative;
-	display: none;
 
+	/* 	display: none;
+ */
 	@media only screen and (max-width: $breakpoint_laptop) {
 
 		::before {
@@ -32,6 +33,11 @@
 
 	h2 {
 		color: $color__white;
+
+		&::before {
+			left: 50%;
+			transform: translate(-50%);
+		}
 	}
 
 	p {
@@ -55,16 +61,28 @@
 				color: $color__white;
 				text-transform: uppercase;
 				background-color: unset;
-				border: 2px solid $color__white;
+				border: 2px solid $color__orange;
 				border-radius: 20px;
-				padding: 0.5rem 1rem;
+				padding: 1rem 1.5rem;
 
 				&:hover {
-					color: $color__deepblue;
-					background-color: $color__white;
-					border: 2px solid $color__deepblue;
+					color: $color__white;
+					background-color: $color__orange;
+					border: 2px solid $color__orange;
 				}
+			}
 
+			&.test__btn--no {
+
+				.wp-block-button__link {
+					background-color: $color__orange;
+
+					&:hover {
+						color: $color__white;
+						background-color: $color__deepblue;
+						border: 2px solid $color__orange;
+					}
+				}
 			}
 		}
 	}

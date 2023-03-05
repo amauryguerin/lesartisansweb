@@ -706,7 +706,6 @@ h3 {
 	color: #fff;
 	padding: 2rem 0;
 	position: relative;
-	display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -738,6 +737,11 @@ h3 {
 	color: #fff;
 }
 
+#test h2::before {
+	left: 50%;
+	transform: translate(-50%);
+}
+
 #test p {
 	font-family: effra, sans-serif;
 	font-size: 1.5rem;
@@ -757,15 +761,25 @@ h3 {
 	color: #fff;
 	text-transform: uppercase;
 	background-color: unset;
-	border: 2px solid #fff;
+	border: 2px solid #fcab00;
 	border-radius: 20px;
-	padding: 0.5rem 1rem;
+	padding: 1rem 1.5rem;
 }
 
 #test .wp-block-buttons .wp-block-button .wp-block-button__link:hover {
-	color: #192241;
-	background-color: #fff;
-	border: 2px solid #192241;
+	color: #fff;
+	background-color: #fcab00;
+	border: 2px solid #fcab00;
+}
+
+#test .wp-block-buttons .wp-block-button.test__btn--no .wp-block-button__link {
+	background-color: #fcab00;
+}
+
+#test .wp-block-buttons .wp-block-button.test__btn--no .wp-block-button__link:hover {
+	color: #fff;
+	background-color: #192241;
+	border: 2px solid #fcab00;
 }/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
 	line-height: 1.15;
